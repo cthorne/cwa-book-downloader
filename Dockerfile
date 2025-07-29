@@ -66,9 +66,9 @@ RUN pip install --no-cache-dir -r requirements.txt && \
     rm -rf /root/.cache
 
 # Add this line to grant read/execute permissions to others
-RUN chmod -R o+rx /usr/bin/chromium && \
-    chmod -R o+rx /usr/bin/chromedriver && \
-    chmod -R o+w /usr/local/lib/python3.10/site-packages/seleniumbase/drivers/
+#RUN chmod -R o+rx /usr/bin/chromium && \
+#    chmod -R o+rx /usr/bin/chromedriver && \
+#    chmod -R o+w /usr/local/lib/python3.10/site-packages/seleniumbase/drivers/
 
 # Our custom wanabe curl
 RUN echo "#!/bin/sh" > /usr/local/bin/pyrequests && \
